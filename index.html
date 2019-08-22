@@ -1,0 +1,46 @@
+<!doctype html> <!-- This says your file is in .html -->
+<html lang="en"> <!-- This says your file is in English -->
+
+<head>	<!-- This opens your header. Your header is where different libraries and plugins are loaded -->
+  <meta charset="utf-8">
+  <title>Gabii Tutorial Map</title> <!-- Put the title of your map here -->
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+	<!-- Load Leaflet files -->
+	<link rel="stylesheet" href="./leaflet/leaflet.css"/> <!--Put the path to the leaflet.css  you downloaded here -->
+	<script src="./leaflet/leaflet.js"></script>  <!-- Put the path to the leaflet.js you downloaded here -->
+ 
+	<!-- Load your unique Stylesheet css locally, if necessary> -->
+	<link rel="stylesheet" type="text/css" href="gabiiTutorialMap.css">
+	
+	<!-- makes the stylesheet and the javascript for Leaflet.Pancontrol accessible -->
+<link rel="stylesheet" href="Leaflet.Pancontrol/src/L.Control.Pan.css" /> 
+	<script src="Leaflet.Pancontrol/src/L.Control.Pan.js"></script>
+
+	<!-- allows for external .geoJSON imports -->
+	<script type="text/javascript" src="leaflet_ajax/dist/leaflet.ajax.js"></script>
+
+	<!-- allows for timeline creation -->
+	<script src="./d3-simple-slider-master/d3-simple-slider.min.js"></script>
+	<script src="./d3-simple-slider-master/d3.v5.js"></script>
+	
+	<!-- calls the stylesheet for your map -->
+	<link rel="stylesheet" type="text/css" href="gabiiTutorialMap.css">
+
+</head>
+
+<!-- In the body of the code, you need to create the division on the page for your map and call the map.js file you will make next -->
+<body>
+	<div id = "map" style = "width:900px; height:580px;"></div> <!--set the size of your map -->
+
+	<form class="slidersettings">
+		<div class="source box">
+		<div class="title">Gabii Phases</div>
+		<div id="slider"></div>
+		</div>
+	</form>
+	
+	  	<script type="text/javascript" src="gabiiTutorialMap.js"></script> <!--call the javascript file for your map -->
+
+</body>
+</html>

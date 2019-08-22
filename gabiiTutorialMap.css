@@ -1,0 +1,23 @@
+
+
+
+/* this edits the style of your timeline */
+	.box {
+        border: 1px solid #EEE;
+        margin: 2px;
+        padding: 3px;
+        background-color: white;
+        font-family: sans-serif;
+        font-size: 12px;
+        z-index: 1000;
+    }
+	/* this edits the font of your title */
+    .title {
+        font-weight: 600;
+    }
+	/* this edits the position of the box which holds the timeline */
+    .source {
+        position: absolute;
+        top: 300px;
+        left: 675px;
+    }
